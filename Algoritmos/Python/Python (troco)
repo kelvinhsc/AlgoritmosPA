@@ -1,0 +1,6 @@
+compra = float(input("Digite o valor da compra: R$ "))
+pago = float(input("Digite o valor pago: R$ "))
+
+troco = pago - compra
+
+print(f"O troco é: R$ {troco:.2f}")

@@ -1,0 +1,15 @@
+const readline = require("readline");
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question("Digite o valor da compra: ", (compraInput) => {
+  rl.question("Digite o valor pago: ", (pagoInput) => {
+    let compra = Number(compraInput);
+    let pago = Number(pagoInput);
+    let troco = pago - compra;
+    console.log("O troco é: R$" + troco);
+    rl.close();
+  });
+});

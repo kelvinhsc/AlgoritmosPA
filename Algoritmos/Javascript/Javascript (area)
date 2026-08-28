@@ -1,0 +1,17 @@
+const readline = require("readline");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question("Digite a base: ", (baseInput) => {
+  rl.question("Digite a altura: ", (alturaInput) => {
+    let base = Number(baseInput);
+    let altura = Number(alturaInput);
+    let area = base * altura;
+
+    console.log("A área é: " + area);
+    rl.close();
+  });
+});

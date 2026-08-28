@@ -1,0 +1,12 @@
+const readline = require("readline");
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question("Digite a temperatura em °C: ", (celciusInput) => {
+  let celcius = Number(celciusInput);
+  let fahrenheit = (celcius * 9/5) + 32;
+  console.log("Temperatura em Fahrenheit: " + fahrenheit + " °F");
+  rl.close();
+});
